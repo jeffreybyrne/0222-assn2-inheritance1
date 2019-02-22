@@ -25,6 +25,9 @@ class People:
     def __init__(self, new_name):
         self.name = new_name
 
+    def greet(self):
+        return "Hi, my name is {}.".format(self.name)
+
 
 class Student(People):
 
@@ -36,7 +39,3 @@ class Instructor(People):
 
     def teach(self):
         return "An object is an instance of a class."
-
-
-jeff = Student('Jeff')
-print(jeff.learn())
