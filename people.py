@@ -20,13 +20,23 @@
 # explaining why.
 
 
-class Student:
+class People:
+
+    def __init__(self, new_name):
+        self.name = new_name
+
+
+class Student(People):
 
     def learn(self):
         return "I get it!"
 
 
-class Instructor:
+class Instructor(People):
 
     def teach(self):
         return "An object is an instance of a class."
+
+
+jeff = Student('Jeff')
+print(jeff.learn())
