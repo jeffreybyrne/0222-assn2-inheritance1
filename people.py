@@ -27,4 +27,6 @@ class Student:
 
 
 class Instructor:
-    pass
+
+    def teach(self):
+        return "An object is an instance of a class."
