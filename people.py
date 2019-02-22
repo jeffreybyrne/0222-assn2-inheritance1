@@ -45,3 +45,7 @@ nadia = Instructor("Nadia")
 print(nadia.greet())
 chris = Student("Chris")
 print(chris.greet())
+print(nadia.teach())
+print(chris.learn())
+# print(chris.teach()) This won't work because the Student inherits from the
+# People class, but the teach method is for the Instructor class only
