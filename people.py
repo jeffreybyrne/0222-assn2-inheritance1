@@ -39,3 +39,9 @@ class Instructor(People):
 
     def teach(self):
         return "An object is an instance of a class."
+
+
+nadia = Instructor("Nadia")
+print(nadia.greet())
+chris = Student("Chris")
+print(chris.greet())
