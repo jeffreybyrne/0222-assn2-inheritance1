@@ -21,7 +21,9 @@
 
 
 class Student:
-    pass
+
+    def learn(self):
+        return "I get it!"
 
 
 class Instructor:
